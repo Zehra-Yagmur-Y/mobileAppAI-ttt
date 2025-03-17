@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Butona basılınca rengi koyulaşsın -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#A9A9A9"/> <!-- Koyu gri -->
+            <corners android:radius="12dp"/> <!-- Yuvarlak köşeler -->
+        </shape>
+    </item>
+
+    <!-- Normal buton rengi -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#D3D3D3"/> <!-- Açık gri -->
+            <corners android:radius="12dp"/> <!-- Yuvarlak köşeler -->
+        </shape>
+    </item>
+</selector>

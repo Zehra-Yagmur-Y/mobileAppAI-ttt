@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@android:color/background_light">
+
+    <!-- Zorluk Seviyesi -->
+    <TextView
+        android:id="@+id/difficultyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zorluk: Kolay"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Skor Tablosu -->
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X: 0 | O: 0"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Oyun Durumu Gösterme (Kim Kazandı?) -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sıra: X"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Tic Tac Toe Tahtası (3x3 GridLayout) -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_marginBottom="20dp">
+
+        <!-- 3x3 Butonlar -->
+        <Button android:id="@+id/button00" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/button01" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/button02" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/button10" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/button11" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/button12" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/button20" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/button21" style="@style/TicTacToeButton" />
+        <Button android:id="@+id/button22" style="@style/TicTacToeButton" />
+    </GridLayout>
+
+    <!-- Oyunu Sıfırla Butonu -->
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oyunu Sıfırla"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:onClick="resetGame" />
+</LinearLayout>

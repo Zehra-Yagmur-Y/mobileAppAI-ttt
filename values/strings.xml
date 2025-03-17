@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tic Tac Toe</string>
+
+    <!-- Zorluk seviyeleri -->
+    <string-array name="difficulty_levels">
+        <item>Kolay</item>
+        <item>Orta</item>
+        <item>Zor</item>
+    </string-array>
+</resources>
